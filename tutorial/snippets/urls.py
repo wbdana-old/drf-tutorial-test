@@ -10,7 +10,7 @@ router = DefaultRouter() # Automatically creates the root '/' view
 router.register(r'snippets', views.SnippetViewSet)
 router.register(r'users', views.UserViewSet)
 
-# The API URLs are now deterined automatically by the router.
+# The API URLs are now determined automatically by the router.
 urlpatterns = [
     path('schema/', schema_view),
     path('', include(router.urls)),
